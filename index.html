@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <style type="text/css">
-      .cv {
+      .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 1161px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .heder {
         max-width: 1349px;
         margin: 0 auto;
         background-color: #fdf5e6;
@@ -15,34 +23,81 @@
         display: flex;
         justify-content: space-between;
         line-height: 38px;
+        border: 2px solid goldenrod;
       }
       .foto {
         width: 320px;
         height: auto;
       }
+      .footer {
+        max-width: 1349px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: #fdf5e6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid goldenrod;
+        margin-top: -2px;
+      }
+      .logors {
+        height: auto;
+        width: 95px;
+      }
+      .logogit {
+        height: auto;
+        width: 85px;
+        background: #fdf5e6;
+      }
+      .data {
+        font-size: 20px;
+        font-family: Verdana black, sans-serif;
+      }
     </style>
   </head>
   <body>
-    <div class="cv">
-      <ol>
-        <li>YEMELYANENKA ALIAKSANDR</li>
-        <li>+37529-777-24-17 MTS</li>
-        <li>
-          Enter the IT sphere. Persistent, stress-resistant, hardy, positive,
-          friendly.<br />
-          In my free time I try to make up
-        </li>
-        <li>HTML, CSS, learning JS</li>
-        <li></li>
-        <li>
-          Passed a free course at
-          <a href="https://ru.code-basics.com/">ru.code-basics</a> ,
-          <a href="https://htmlacademy.ru/courses">htmlacademy.ru</a>
-        </li>
-        <li>Minsk State Engineering College</li>
-        <li>A1</li>
-      </ol>
-      <img class="foto" src="imege/my foto.jpg" alt="I" />
-    </div>
+    <nav class="wrapper">
+      <nav class="heder">
+        <ul>
+          <li><b>YEMELYANENKA ALIAKSANDR</b></li>
+          <li>+37529-777-24-17 MTS</li>
+          <li>
+            Enter the IT sphere. Persistent, stress-resistant, hardy, positive,
+            friendly.<br />
+            In my free time I try to make up
+          </li>
+          <li>HTML, CSS, learning JS</li>
+          <li></li>
+          <li>
+            Passed a free course at
+            <a href="https://ru.code-basics.com/">ru.code-basics</a> ,
+            <a href="https://htmlacademy.ru/courses">htmlacademy.ru</a>
+          </li>
+          <li>Minsk State Engineering College</li>
+          <li>A1</li>
+        </ul>
+        <img class="foto" src="imege/my foto.jpg" alt="I" />
+      </nav>
+    </nav>
+    <nav class="wrapper">
+      <nav class="footer">
+        <p class="data">03.03.2021</p>
+        <a href="https://github.com/Aleksandr070888?tab=repositories"
+          ><img class="logogit" src="imege/logogit.png" alt="Github"
+        /></a>
+
+        <a href="https://rs.school/js/"
+          ><img
+            class="logors"
+            src="https://rs.school/images/rs_school_js.svg"
+            alt="Logo Rsschool"
+        /></a>
+        <a href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+            alt="YouTube"
+        /></a>
+      </nav>
+    </nav>
   </body>
 </html>
